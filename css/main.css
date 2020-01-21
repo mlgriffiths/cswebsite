@@ -45,6 +45,7 @@ a img {
   border: none;
 }
 /* END RESET */
+
 /* GLOBAL STYLES*/
 body {
   font-family: helvetica, arial, sans-serif;
@@ -58,6 +59,23 @@ h1 {
 a {
   color: #f00;
 }
+
+/* HEADER STYLES */
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav a {
+  color: #000;
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 
 /*HERO STYLES*/
 .full-hero {
