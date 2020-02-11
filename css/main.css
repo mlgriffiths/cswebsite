@@ -1,7 +1,7 @@
 <style>
 /* GLOBAL STYLES*/
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: arial;
 }
 
 h1 {
@@ -11,6 +11,14 @@ h1 {
 }
 a {
   color: #f00;
+}
+
+h2 + p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
 }
 
 /* HEADER STYLES */
@@ -35,10 +43,20 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: #0717f5;
+}
+.header-logo {
+  color: rgb(7,11,245)
+}
 .header-logo:hover,
 .header-logo:active {
   opacity: 0.5;
 }
+
 
 
 /*HERO STYLES*/
@@ -53,7 +71,7 @@ a {
   box-sizing: border-box
   color: #ff0000;
   display: block;
-  font-family: helvetica, arial, sans;
+  font-family: helvetica, arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   height: 2.5em;
@@ -95,7 +113,7 @@ a {
   width: 23%;
 }
 .bio-box h3 {
-  color: #fff;
+  color: rgb(237,12,12);
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
