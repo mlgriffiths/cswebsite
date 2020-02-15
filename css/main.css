@@ -13,7 +13,7 @@ a {
   color: #f00;
 }
 
-h2 + p {
+h2 ~ p {
   font-size: 0.8em;
   font-style: italic;
   margin: 1em auto 0;
@@ -23,7 +23,23 @@ h2 + p {
 
 /* HEADER STYLES */
 .header {
-  background: #fb0;
+  background-color: #aaa;
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+.header-logo {
+  background-color: #000;
+  height: 110px;
+  position: relative;
+  width: 110px;
+}
+.header-logo:hover,
+.header-logo:active {
+  opacity: 0.5;
+}
+.header-logo: img {
+  width: 4.3vh;
 }
 .header-nav {
   float: right;
@@ -33,10 +49,13 @@ h2 + p {
   display: inline-block;
   margin-left: 1em;
 }
+.header-nav > li ~ li {
+  border-left: 1px solid rgb(232,111,102);
+  padding-left: 1em;
+}
 .header-nav a:hover,
 .header-nav a:active {
   color: #ed6e2f;
-
   background-color: #3c3:
   font-size: 0.8rem;
   font-weight: bold;
@@ -49,21 +68,13 @@ h2 + p {
 .header-nav > li:first-child a:hover {
   color: #0717f5;
 }
-.header-logo {
-  color: rgb(7,11,245)
-}
-.header-logo:hover,
-.header-logo:active {
-  opacity: 0.5;
-}
-
-
 
 /*HERO STYLES*/
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
 }
+
 /* SOCIAL STYLES*/
 .social-link {
   background: rgba(150,150,150,0.5);
@@ -96,6 +107,7 @@ h2 + p {
   display: inline-block;
   margin: 0 0.5em;
 }
+
 /* BIO STYLES*/
 .bio-wrapper {
   font-size: 24px;
@@ -135,6 +147,7 @@ h2 + p {
 .bio-copy  {
   font-size: 1em;
 }
+
 /*BACKGROUND COPY STYLES*/
 .background-copy {
   font-size: 1rem;
