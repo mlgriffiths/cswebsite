@@ -1,7 +1,7 @@
 <style>
 /* GLOBAL STYLES*/
 body {
-  font-family: arial;
+  font-family: arial, sans-serif;
 }
 
 h1 {
@@ -29,14 +29,13 @@ h2 ~ p {
   width: 100%;
 }
 .header-logo {
-  background-color: #000;
   height: 110px;
   position: relative;
   width: 110px;
 }
 .header-logo:hover,
 .header-logo:active {
-  opacity: 0.5;
+
 }
 .header-logo: img {
   width: 4.3vh;
@@ -70,7 +69,8 @@ h2 ~ p {
 }
 
 /*HERO STYLES*/
-.full-hero {
+.full-hero
+.hero-home {
   background-color: #c7dbfc;
   height: 50vh;
 }
@@ -82,7 +82,7 @@ h2 ~ p {
   box-sizing: border-box
   color: #ff0000;
   display: block;
-  font-family: helvetica, arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 1rem;
   font-weight: bold;
   height: 2.5em;
